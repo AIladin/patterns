@@ -6,8 +6,13 @@
 Building 100 default cars
 Creating new engine. Engine(power=10, fuel=<Fuel.DIESEL: 'diesel'>)
 Creating new wheel. Wheel(diameter=10, material=<WheelMaterial.ALLOY: 'alloy'>)
+Car(car_type=<CarType.SEDAN: 'sedan'>, color=<Color.BLACK: 'black'>, engine=Engine(power=10, fuel=<Fuel.DIESEL: 'diesel'>), wheel=Wheel(diameter=10, material=<WheelMaterial.ALLOY: 'alloy'>)) x 100
+
 Building 100 cars with different color and style
+Car(car_type=<CarType.HATCHBACK: 'hatchback'>, color=<Color.BLACK: 'black'>, engine=Engine(power=10, fuel=<Fuel.DIESEL: 'diesel'>), wheel=Wheel(diameter=10, material=<WheelMaterial.ALLOY: 'alloy'>)) x 100
+
 Building 100 cars whith different engine and wheels
 Creating new engine. Engine(power=15, fuel=<Fuel.DIESEL: 'diesel'>)
 Creating new wheel. Wheel(diameter=10, material=<WheelMaterial.STEEL: 'steel'>)
+Car(car_type=<CarType.HATCHBACK: 'hatchback'>, color=<Color.BLACK: 'black'>, engine=Engine(power=15, fuel=<Fuel.DIESEL: 'diesel'>), wheel=Wheel(diameter=10, material=<WheelMaterial.STEEL: 'steel'>)) x 100
 ```
