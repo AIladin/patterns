@@ -3,6 +3,7 @@
 відкриття файлів різних типів. Реалізацію здійсніть використовуючи шаблон
 проектування Ланцюжок обов’язків. 
 # Результат
+```
 PNG_Handler is queued after JPG_Handler
 DOCX_Handler is queued after PNG_Handler
 DOC_Handler is queued after DOCX_Handler
@@ -46,3 +47,4 @@ XLS_Handler not supported extension .pdf passing to next handler.
 XLSX_Handler not supported extension .pdf passing to next handler.
 PPTX_Handler not supported extension .pdf passing to next handler.
 PDF_Handler is opening document.pdf.
+```
