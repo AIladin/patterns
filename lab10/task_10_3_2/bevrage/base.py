@@ -1,12 +1,14 @@
-from abc import ABC, abstractproperty
+from abc import ABC, abstractmethod
 
 
 class Bevrage(ABC):
-    @abstractproperty
+    @property
+    @abstractmethod
     def description(self) -> str:
         pass
 
-    @abstractproperty
+    @property
+    @abstractmethod
     def cost(self) -> float:
         pass
 
