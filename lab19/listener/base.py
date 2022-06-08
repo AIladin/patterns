@@ -1,7 +1,8 @@
-from abc import ABC, abstractproperty
+from abc import ABC, abstractmethod
 
 
 class BaseListener(ABC):
-    @abstractproperty
+    @property
+    @abstractmethod
     def update(self, line: str):
         pass
