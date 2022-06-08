@@ -27,6 +27,6 @@ public class Dough {
 
     @Override
     public String toString() {
-        return "Dough {type=" doughType + ", flour=" + flourType + "}";
+        return "Dough {type=" + doughType + ", flour=" + flourType + "}";
     }
 }
