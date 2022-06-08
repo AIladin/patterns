@@ -1,7 +1,4 @@
 from abc import ABC
-from typing import TypeVar
-
-T = TypeVar("T", bound="BaseHandler")
 
 
 class BaseHandler(ABC):
@@ -12,6 +9,7 @@ class BaseHandler(ABC):
         if self.next_handler is not None:
             self.next_handler.open(file_name)
 
-    def set_next(self, handler: T) -> T:
+    def set_next(self, handler: "BaseHandler") -> "BaseHandler":
         print(f"{handler.__class__.__name__} is queued after {self.__class__.__name__}")
         self.next_handler = handler
+        return handler

@@ -2,21 +2,22 @@ from handler import file_handler
 
 
 def init_handlers() -> file_handler.FileHandler:
-    handlers = [
-        file_handler.JPG_Handler(),
-        file_handler.PNG_Handler(),
-        file_handler.DOCX_Handler(),
-        file_handler.DOC_Handler(),
-        file_handler.XLS_Handler(),
-        file_handler.XLSX_Handler(),
-        file_handler.PPTX_Handler(),
-        file_handler.PDF_Handler(),
-    ]
+    root_handler = file_handler.JPG_Handler()
 
-    for prev_h, next_h in zip(handlers[:-1], handlers[1:]):
-        prev_h.set_next(next_h)
-
-    return handlers[0]
+    root_handler.set_next(file_handler.JPG_Handler()).set_next(
+        file_handler.PNG_Handler()
+    ).set_next(file_handler.DOCX_Handler()).set_next(
+        file_handler.DOCX_Handler()
+    ).set_next(
+        file_handler.XLS_Handler()
+    ).set_next(
+        file_handler.XLSX_Handler()
+    ).set_next(
+        file_handler.PPTX_Handler()
+    ).set_next(
+        file_handler.PDF_Handler()
+    )
+    return root_handler
 
 
 def main():
