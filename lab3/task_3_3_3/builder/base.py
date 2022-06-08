@@ -1,20 +1,18 @@
 from abc import ABC, abstractmethod
-from typing import TypeVar, Any
-
-T = TypeVar("T", bound="BaseBuilder")
+from typing import Any
 
 
 class BaseBuilder(ABC):
     @abstractmethod
-    def append_substring(self, substring: str) -> T:
+    def append_substring(self, substring: str) -> "BaseBuilder":
         pass
 
     @abstractmethod
-    def insert_substring(self, substring: str, position: int) -> T:
+    def insert_substring(self, substring: str, position: int) -> "BaseBuilder":
         pass
 
     @abstractmethod
-    def reset(self) -> T:
+    def reset(self) -> "BaseBuilder":
         pass
 
     @abstractmethod
